@@ -1,0 +1,10 @@
+---
+roles:
+  - name: robertdebock.backup
+  - name: buluma.bootstrap
+  - name: buluma.core_dependencies
+  - name: buluma.mysql
+  - name: buluma.buildtools
+  - name: buluma.epel
+  - name: buluma.python_pip
+  - name: buluma.postgres
