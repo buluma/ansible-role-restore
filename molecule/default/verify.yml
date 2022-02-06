@@ -11,7 +11,7 @@
         state: directory
 
   roles:
-    - role: robertdebock.mysql
+    - role: buluma.mysql
       mysql_databases:
         - name: test_db
           encoding: utf8
@@ -20,7 +20,7 @@
         - name: restore
           password: rest0re
           priv: "test_db.*:ALL"
-    - role: robertdebock.postgres
+    - role: buluma.postgres
       postgres_databases:
         - name: test_db
           state: present
