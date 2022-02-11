@@ -44,8 +44,6 @@ testing:
   parallel:
     matrix:
       - image: "enterpriselinux"
-        tag: "7"
-      - image: "enterpriselinux"
         tag: "latest"
       - image: "debian-systemd"
         tag: "latest"
