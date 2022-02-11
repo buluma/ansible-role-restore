@@ -4,7 +4,7 @@ The purpose of this role is to restore objects to your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-restore/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-restore/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-restore/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-restore)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/buluma/restore)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/buluma/restore)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-restore.svg)](https://github.com/buluma/ansible-role-restore/releases/)|
+|[![github](https://github.com/buluma/ansible-role-restore/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-restore/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-restore/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-restore)|[![quality](https://img.shields.io/ansible/quality/57953)](https://galaxy.ansible.com/buluma/restore)|[![downloads](https://img.shields.io/ansible/role/d/57953)](https://galaxy.ansible.com/buluma/restore)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-restore.svg)](https://github.com/buluma/ansible-role-restore/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
