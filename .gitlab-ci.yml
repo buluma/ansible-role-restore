@@ -94,6 +94,7 @@ galaxy:
     - ansible-galaxy role info buluma.restore
 
 sanity_check:
+  stage: test
   script:
     - ansible-test sanity --docker default
 
