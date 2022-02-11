@@ -96,7 +96,7 @@ galaxy:
 sanity_check:
   stage: test
   script:
-    - ansible-test sanity --docker default
+    - ansible-test units --coverage apt && ansible-test coverage html
 
 role_testing_live:
   script:
