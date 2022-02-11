@@ -37,6 +37,10 @@ jobs:
       matrix:
         config:
           - image: "enterpriselinux"
+            tag: "7"
+          - image: "enterpriselinux"
+            tag: "latest"
+          - image: "debian-systemd"
             tag: "latest"
           - image: "fedora-systemd"
             tag: "34"
@@ -46,6 +50,10 @@ jobs:
             tag: "rawhide"
           - image: "opensuse"
             tag: "latest"
+          - image: "docker-ubuntu-systemd"
+            tag: "latest"
+          - image: "docker-ubuntu-systemd"
+            tag: "bionic"
     steps:
       - name: checkout
         uses: actions/checkout@v2.4.0
