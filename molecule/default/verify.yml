@@ -24,7 +24,7 @@
       postgres_databases:
         - name: test_db
           state: present
-    - role: robertdebock.backup
+    - role: buluma.backup
       backup_format: zip
       backup_objects:
         - name: home
