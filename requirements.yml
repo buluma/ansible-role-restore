@@ -1,6 +1,6 @@
 ---
 roles:
-  - name: robertdebock.backup
+  - name: buluma.backup
   - name: buluma.bootstrap
   - name: buluma.core_dependencies
   - name: buluma.mysql
