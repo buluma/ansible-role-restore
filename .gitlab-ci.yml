@@ -18,8 +18,6 @@ molecule:
     matrix:
       - image: "enterpriselinux"
         tag: "latest"
-      - image: "debian-systemd"
-        tag: "bullseye"
       - image: "fedora-systemd"
         tag: "34"
       - image: "fedora-systemd"
@@ -28,10 +26,6 @@ molecule:
         tag: "rawhide"
       - image: "opensuse"
         tag: "latest"
-      - image: "docker-ubuntu-systemd"
-        tag: "focal"
-      - image: "docker-ubuntu-systemd"
-        tag: "bionic"
 
 testing:
   script:
@@ -43,8 +37,6 @@ testing:
     matrix:
       - image: "enterpriselinux"
         tag: "latest"
-      - image: "debian-systemd"
-        tag: "bullseye"
       - image: "fedora-systemd"
         tag: "34"
       - image: "fedora-systemd"
@@ -53,23 +45,17 @@ testing:
         tag: "rawhide"
       - image: "opensuse"
         tag: "latest"
-      - image: "docker-ubuntu-systemd"
-        tag: "focal"
-      - image: "docker-ubuntu-systemd"
-        tag: "bionic"
 
 role_testing:
   script:
     - image=${image} tag=${tag} ansible-galaxy install buluma.restore
   rules:
     - if: $CI_COMMIT_REF_NAME == "testing"
-  retry: 1
+  retry: 2
   parallel:
     matrix:
       - image: "enterpriselinux"
         tag: "latest"
-      - image: "debian-systemd"
-        tag: "bullseye"
       - image: "fedora-systemd"
         tag: "34"
       - image: "fedora-systemd"
@@ -78,10 +64,6 @@ role_testing:
         tag: "rawhide"
       - image: "opensuse"
         tag: "latest"
-      - image: "docker-ubuntu-systemd"
-        tag: "focal"
-      - image: "docker-ubuntu-systemd"
-        tag: "bionic"
 
 galaxy:
   script:
@@ -90,13 +72,11 @@ galaxy:
 role_testing_live:
   script:
     - image=${image} tag=${tag} ansible-galaxy install buluma.restore
-  retry: 1
+  retry: 2
   parallel:
     matrix:
       - image: "enterpriselinux"
         tag: "latest"
-      - image: "debian-systemd"
-        tag: "bullseye"
       - image: "fedora-systemd"
         tag: "34"
       - image: "fedora-systemd"
@@ -105,7 +85,3 @@ role_testing_live:
         tag: "rawhide"
       - image: "opensuse"
         tag: "latest"
-      - image: "docker-ubuntu-systemd"
-        tag: "focal"
-      - image: "docker-ubuntu-systemd"
-        tag: "bionic"
