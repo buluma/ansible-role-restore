@@ -1,5 +1,5 @@
 ---
-image: "buluma/github-action-molecule:4.0.5"
+image: "buluma/github-action-molecule:4.0.6"
 
 services:
   - docker:dind
@@ -51,7 +51,7 @@ role_testing:
     - image=${image} tag=${tag} ansible-galaxy install buluma.restore
   rules:
     - if: $CI_COMMIT_REF_NAME == "testing"
-  retry: 2
+  retry: 1
   parallel:
     matrix:
       - image: "enterpriselinux"
@@ -72,7 +72,7 @@ galaxy:
 role_testing_live:
   script:
     - image=${image} tag=${tag} ansible-galaxy install buluma.restore
-  retry: 2
+  retry: 1
   parallel:
     matrix:
       - image: "enterpriselinux"
