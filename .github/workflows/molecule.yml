@@ -37,10 +37,6 @@ jobs:
       matrix:
         config:
           - image: "enterpriselinux"
-            tag: "7"
-          - image: "enterpriselinux"
-            tag: "latest"
-          - image: "debian-systemd"
             tag: "latest"
           - image: "fedora-systemd"
             tag: "34"
@@ -49,8 +45,6 @@ jobs:
           - image: "fedora-systemd"
             tag: "rawhide"
           - image: "opensuse"
-            tag: "latest"
-          - image: "docker-ubuntu-systemd"
             tag: "latest"
     steps:
       - name: checkout
