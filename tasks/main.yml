@@ -5,7 +5,7 @@
   run_once: yes
 
 - name: create remote_backup_directory
-  file:
+  ansible.builtin.file:
     path: "{{ restore_remote_directory }}"
     state: directory
     mode: "0755"
