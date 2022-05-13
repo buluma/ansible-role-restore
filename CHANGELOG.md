@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-restore/tree/HEAD)
+## [1.0.6](https://github.com/buluma/ansible-role-restore/tree/1.0.6) (2022-04-25)
 
-[Full Changelog](https://github.com/buluma/ansible-role-restore/compare/1.0.5...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-restore/compare/1.0.5...1.0.6)
 
 **Merged pull requests:**
 
