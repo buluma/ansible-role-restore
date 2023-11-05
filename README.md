@@ -2,9 +2,9 @@
 
 The purpose of this role is to restore objects to your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|---------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-restore/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-restore/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-restore/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-restore)|[![quality](https://img.shields.io/ansible/quality/57953)](https://galaxy.ansible.com/buluma/restore)|[![downloads](https://img.shields.io/ansible/role/d/57953)](https://galaxy.ansible.com/buluma/restore)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-restore.svg)](https://github.com/buluma/ansible-role-restore/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-restore.svg)](https://github.com/buluma/ansible-role-restore/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-restore.svg)](https://github.com/buluma/ansible-role-restore/pulls/)|
+|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-restore/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-restore/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-restore/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-restore)|[![downloads](https://img.shields.io/ansible/role/d/4821)](https://galaxy.ansible.com/buluma/restore)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-restore.svg)](https://github.com/buluma/ansible-role-restore/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-restore.svg)](https://github.com/buluma/ansible-role-restore/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-restore.svg)](https://github.com/buluma/ansible-role-restore/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
