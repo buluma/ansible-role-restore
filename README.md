@@ -1,10 +1,10 @@
-# [Ansible role restore](#restore)
+# Ansible role [restore](https://galaxy.ansible.com/ui/standalone/roles/buluma/restore/documentation)
 
 The purpose of this role is to restore objects to your system.
 
-|GitHub|Version|Issues|Pull Requests|
-|------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-restore/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-restore/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-restore.svg)](https://github.com/buluma/ansible-role-restore/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-restore.svg)](https://github.com/buluma/ansible-role-restore/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-restore.svg)](https://github.com/buluma/ansible-role-restore/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-restore/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-restore/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-restore.svg)](https://github.com/buluma/ansible-role-restore/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-restore.svg)](https://github.com/buluma/ansible-role-restore/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-restore.svg)](https://github.com/buluma/ansible-role-restore/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/restore)](https://galaxy.ansible.com/ui/standalone/roles/buluma/restore/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -130,13 +130,11 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [License](#license)
 
-[Apache-2.0](https://github.com/buluma/ansible-role-restore/blob/master/LICENSE).
+[Apache-2.0](https://github.com/buluma/ansible-role-restore/blob/master/LICENSE)
 
 ## [Author Information](#author-information)
 
-[buluma](https://buluma.github.io/)
+[Shadow Walker](https://buluma.github.io/)
 
-
-### [Special Thanks](#special-thanks)
 
 Template inspired by [Robert de Bock](https://github.com/robertdebock)
