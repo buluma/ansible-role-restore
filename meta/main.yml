@@ -1,29 +1,22 @@
----
 galaxy_info:
   author: buluma
   role_name: restore
   description: The purpose of this role is to restore objects to your system.
   license: Apache-2.0
   company: ShadowNet
-  min_ansible_version: "2.12"
-
+  min_ansible_version: '2.12'
   platforms:
-    - name: EL
-      versions:
-        - "8"
-        - "9"
-    - name: Fedora
-      versions:
-        - "38"
-        - "39"
-        - "40"
-    - name: opensuse
-      versions:
-        - all
-
+  - name: EL
+    versions:
+    - all
+  - name: Fedora
+    versions:
+    - all
+  - name: opensuse
+    versions:
+    - all
   galaxy_tags:
-    - restore
-    - server
-    - system
-
+  - restore
+  - server
+  - system
 dependencies: []
