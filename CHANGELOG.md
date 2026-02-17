@@ -1,5 +1,14 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-restore/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-restore/compare/24.3.31...HEAD)
+
+**Closed issues:**
+
+- Update action [\#23](https://github.com/buluma/ansible-role-restore/issues/23)
+- rebuild action [\#22](https://github.com/buluma/ansible-role-restore/issues/22)
+
 ## [24.3.31](https://github.com/buluma/ansible-role-restore/tree/24.3.31) (2024-03-26)
 
 [Full Changelog](https://github.com/buluma/ansible-role-restore/compare/1.2.0...24.3.31)
@@ -63,7 +72,6 @@
 **Merged pull requests:**
 
 - set concurrency [\#12](https://github.com/buluma/ansible-role-restore/pull/12) ([buluma](https://github.com/buluma))
-- completed [\#8](https://github.com/buluma/ansible-role-restore/pull/8) ([buluma](https://github.com/buluma))
 
 ## [1.0.3](https://github.com/buluma/ansible-role-restore/tree/1.0.3) (2022-02-12)
 
@@ -84,6 +92,7 @@
 **Merged pull requests:**
 
 - code of conduct update [\#9](https://github.com/buluma/ansible-role-restore/pull/9) ([buluma](https://github.com/buluma))
+- completed [\#8](https://github.com/buluma/ansible-role-restore/pull/8) ([buluma](https://github.com/buluma))
 - Testing [\#7](https://github.com/buluma/ansible-role-restore/pull/7) ([buluma](https://github.com/buluma))
 - Test GitLab Install [\#6](https://github.com/buluma/ansible-role-restore/pull/6) ([buluma](https://github.com/buluma))
 - Sanity Check Testing [\#5](https://github.com/buluma/ansible-role-restore/pull/5) ([buluma](https://github.com/buluma))
