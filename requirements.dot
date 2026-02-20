@@ -1,0 +1,23 @@
+digraph PhiloDilemma {
+  label = "Michael Buluma" ;
+  overlap=false
+  {
+    "restore" [fillcolor=yellow style=filled penwidth=3]
+    "buluma.backup" [fillcolor=green style=filled]
+    "buluma.bootstrap" [fillcolor=green style=filled]
+    "buluma.core_dependencies" [fillcolor=green style=filled]
+    "buluma.mysql" [fillcolor=green style=filled]
+    "buluma.buildtools" [fillcolor=green style=filled]
+    "buluma.epel" [fillcolor=green style=filled]
+    "buluma.python_pip" [fillcolor=green style=filled]
+    "buluma.postgres" [fillcolor=green style=filled]
+  }
+  "restore" -> "buluma.backup"
+  "restore" -> "buluma.bootstrap"
+  "restore" -> "buluma.core_dependencies"
+  "restore" -> "buluma.mysql"
+  "restore" -> "buluma.buildtools"
+  "restore" -> "buluma.epel"
+  "restore" -> "buluma.python_pip"
+  "restore" -> "buluma.postgres"
+}
