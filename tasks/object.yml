@@ -1,5 +1,4 @@
 ---
-
 - name: object | Find most recent object
   ansible.builtin.find:
     paths: "{{ restore_directory }}/{{ inventory_hostname }}"
@@ -24,7 +23,7 @@
 
 - name: object | Unarchive directory object
   ansible.builtin.command:
-    cmd: unzip "{{ restore_remote_directory }}/{{ latest_file.path | basename }}"  # noqa command-instead-of-module
+    cmd: unzip "{{ restore_remote_directory }}/{{ latest_file.path | basename }}" # noqa command-instead-of-module
   when:
     - latest_file is defined
     - object.type == "directory"
