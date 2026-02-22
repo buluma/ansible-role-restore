@@ -1,50 +1,47 @@
----
-- name: Verify
-  hosts: all
-  become: true
+- become: true
   gather_facts: true
-
+  hosts: all
+  name: Verify
   pre_tasks:
-    - name: create a directory to backup
-      ansible.builtin.file:
-        path: /home/test
-        state: directory
-
+  - ansible.builtin.file:
+      path: /home/test
+      state: directory
+    name: create a directory to backup
   roles:
-    - role: buluma.mysql
-      mysql_databases:
-        - name: test_db
-          encoding: utf8
-          collation: utf8_bin
-      mysql_users:
-        - name: restore
-          password: rest0re
-          priv: "test_db.*:ALL"
-    - role: buluma.postgres
-      postgres_databases:
-        - name: test_db
-          state: present
-    - role: buluma.backup
-      backup_format: zip
-      backup_objects:
-        - name: home
-          type: directory
-          source: /home
-        - name: test_db
-          type: mysql
-          source: test_db
-          format: zip
-        - name: test_db
-          type: postgres
-          source: test_db
-          format: zip
-    - role: buluma.restore
-      restore_mysql_username: restore
-      restore_mysql_password: rest0re
-      restore_objects:
-        - name: home
-          type: directory
-          destination: /home
-        - name: test_db
-          type: mysql
-          destination: test_db
+  - mysql_databases:
+    - collation: utf8_bin
+      encoding: utf8
+      name: test_db
+    mysql_users:
+    - name: restore
+      password: rest0re
+      priv: test_db.*:ALL
+    role: buluma.mysql
+  - postgres_databases:
+    - name: test_db
+      state: present
+    role: buluma.postgres
+  - backup_format: zip
+    backup_objects:
+    - name: home
+      source: /home
+      type: directory
+    - format: zip
+      name: test_db
+      source: test_db
+      type: mysql
+    - format: zip
+      name: test_db
+      source: test_db
+      type: postgres
+    role: buluma.backup
+  - restore_mysql_password: rest0re
+    restore_mysql_username: restore
+    restore_objects:
+    - destination: /home
+      name: home
+      type: directory
+    - destination: test_db
+      name: test_db
+      type: mysql
+    role: buluma.restore

@@ -11,33 +11,29 @@ The purpose of this role is to restore objects to your system.
 This example is taken from [`molecule/default/converge.yml`](https://github.com/buluma/ansible-role-restore/blob/master/molecule/default/converge.yml) and is tested on each push, pull request and release.
 
 ```yaml
----
-- name: Converge
-  hosts: all
-  become: true
+- become: true
   gather_facts: true
-
+  hosts: all
+  name: Converge
   roles:
-    - role: buluma.restore
+  - role: buluma.restore
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-restore/blob/master/molecule/default/prepare.yml):
 
 ```yaml
----
-- name: Prepare
-  hosts: all
+- become: true
   gather_facts: false
-  become: true
-
+  hosts: all
+  name: Prepare
   roles:
-    - role: buluma.bootstrap
-    - role: buluma.core_dependencies
-    - role: buluma.mysql
-    - role: buluma.buildtools
-    - role: buluma.epel
-    - role: buluma.python_pip
-    - role: buluma.postgres
+  - role: buluma.bootstrap
+  - role: buluma.core_dependencies
+  - role: buluma.mysql
+  - role: buluma.buildtools
+  - role: buluma.epel
+  - role: buluma.python_pip
+  - role: buluma.postgres
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
@@ -47,36 +43,12 @@ Also see a [full explanation and example](https://buluma.github.io/how-to-use-th
 The default values for the variables are set in [`defaults/main.yml`](https://github.com/buluma/ansible-role-restore/blob/master/defaults/main.yml):
 
 ```yaml
----
-# defaults file for restore
-
-# What directory are the objects to be restored saved?
 restore_directory: backups
-
-# The directory of objects which need to be placed on the managed node
-# temporarily.
-restore_remote_directory: /tmp
-
-# Credentials to login to the mysql database, only require when restoring mysql
-# objects.
-# restore_mysql_username: "my_user"
-# restore_mysql_password: "my_pass"
-
-# A list of objects to restore.
-# Each list item should have:
-# - name to find the object locally.
-#   type, either directory or mysql.
-#   destination, a directory where to unpack the object.
-#
-# Nota bene; the [backup role](http://galaxy.ansible.com/buluma/backup) can be used to create restorable objects. The objects created with this role include the parent directory, so the destination mentioned here ~misses~ the last part of the directory
-
 restore_objects:
-  - name: varspool
-    type: directory
-    destination: /var
-#  - name: drupal
-#    type: mysql
-#    destination: drupal
+- destination: /var
+  name: varspool
+  type: directory
+restore_remote_directory: /tmp
 ```
 
 ## [Requirements](#requirements)
