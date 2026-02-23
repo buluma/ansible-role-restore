@@ -11,29 +11,31 @@ The purpose of this role is to restore objects to your system.
 This example is taken from [`molecule/default/converge.yml`](https://github.com/buluma/ansible-role-restore/blob/master/molecule/default/converge.yml) and is tested on each push, pull request and release.
 
 ```yaml
-- become: true
-  gather_facts: true
-  hosts: all
-  name: Converge
-  roles:
-  - role: buluma.restore
+---
+  - become: true
+    gather_facts: true
+    hosts: all
+    name: Converge
+    roles:
+      - role: buluma.restore
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-restore/blob/master/molecule/default/prepare.yml):
 
 ```yaml
-- become: true
-  gather_facts: false
-  hosts: all
-  name: Prepare
-  roles:
-  - role: buluma.bootstrap
-  - role: buluma.core_dependencies
-  - role: buluma.mysql
-  - role: buluma.buildtools
-  - role: buluma.epel
-  - role: buluma.python_pip
-  - role: buluma.postgres
+---
+  - become: true
+    gather_facts: false
+    hosts: all
+    name: Prepare
+    roles:
+      - role: buluma.bootstrap
+      - role: buluma.core_dependencies
+      - role: buluma.mysql
+      - role: buluma.buildtools
+      - role: buluma.epel
+      - role: buluma.python_pip
+      - role: buluma.postgres
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
@@ -43,11 +45,12 @@ Also see a [full explanation and example](https://buluma.github.io/how-to-use-th
 The default values for the variables are set in [`defaults/main.yml`](https://github.com/buluma/ansible-role-restore/blob/master/defaults/main.yml):
 
 ```yaml
+---
 restore_directory: backups
 restore_objects:
-- destination: /var
-  name: varspool
-  type: directory
+  - destination: /var
+    name: varspool
+    type: directory
 restore_remote_directory: /tmp
 ```
 
