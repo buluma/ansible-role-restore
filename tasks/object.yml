@@ -19,9 +19,10 @@
   when:
     - latest_file is defined
 - name: object | Unarchive directory object
-  ansible.builtin.command:
-    cmd: unzip "{{ restore_remote_directory }}/{{ latest_file.path | basename }}"
-  changed_when: true
+  ansible.builtin.unarchive:
+    dest: "{{ restore_remote_directory }}"
+    remote_src: true
+    src: "{{ restore_remote_directory }}/{{ latest_file.path | basename }}"
   when:
     - latest_file is defined
     - object.type == "directory"
