@@ -17,7 +17,4 @@ galaxy_info:
     - name: Fedora
       versions:
         - all
-    - name: opensuse
-      versions:
-        - all
   role_name: restore
