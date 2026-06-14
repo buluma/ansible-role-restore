@@ -1,13 +1,19 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-restore/tree/HEAD)
+## [26.6.0](https://github.com/buluma/ansible-role-restore/tree/26.6.0) (2026-06-14)
 
-[Full Changelog](https://github.com/buluma/ansible-role-restore/compare/24.3.31...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-restore/compare/24.3.31...26.6.0)
 
 **Closed issues:**
 
 - Update action [\#23](https://github.com/buluma/ansible-role-restore/issues/23)
 - rebuild action [\#22](https://github.com/buluma/ansible-role-restore/issues/22)
+
+**Merged pull requests:**
+
+- Bump ansible/ansible-lint from 26.2.0 to 26.3.0 [\#41](https://github.com/buluma/ansible-role-restore/pull/41) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump ansible/ansible-lint from 26.1.1 to 26.2.0 [\#39](https://github.com/buluma/ansible-role-restore/pull/39) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/checkout from 4 to 6 [\#38](https://github.com/buluma/ansible-role-restore/pull/38) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [24.3.31](https://github.com/buluma/ansible-role-restore/tree/24.3.31) (2024-03-26)
 
