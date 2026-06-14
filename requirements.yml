@@ -1,5 +1,5 @@
 ---
-collections: []
+collections:
   - name: community.mysql
   - name: community.postgresql
 roles:
