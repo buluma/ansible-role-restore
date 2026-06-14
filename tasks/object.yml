@@ -44,7 +44,7 @@
     - object.type == "mysql"
     - latest_file_extension in [ ".gz", ".tgz", ".tar", ".zip" ]
 - name: object | Import mysql database
-  community.mysql.mysql_db:
+  ansible.mysql.mysql_db:
     login_password: "{{ restore_mysql_password | default(omit) }}"
     login_unix_socket: "{{ restore_mysql_socket }}"
     login_user: "{{ restore_mysql_username | default(omit) }}"
